@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <HTML>
 	<HEAD CHARSET="UTF-8" >
+		<SCRIPT SRC="script/script.js"></SCRIPT>
 	<TITLE> PEXESO </TITLE>
 	<LINK REL="stylesheet" HREF="style/style.css">
-	<SCRIPT SRC="script/script.js"></SCRIPT>
+	
 </HEAD>
 	<BODY>
+		<DIV>
+		<DIV class="playersname">Player 1</DIV>
+		<DIV class="score" ID="score1">Score : 0</DIV>
+		<DIV><TABLE id="tableP1"></TABLE></DIV>
+		</DIV>
 		<DIV id="gameboard">
 			<TABLE width="640" border="2">	
 			<TR>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img00" onclick="pos(00)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img01" onclick="pos(01)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img02" onclick="pos(02)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img03" onclick="pos(03)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img00", onclick="clickImg(00)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img01", onclick="clickImg(01)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img02", onclick="clickImg(02)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img03", onclick="clickImg(03)"></TD>
 			</TR>
 			<TR>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img10" onclick="pos(10)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img11" onclick="pos(11)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img12" onclick="pos(12)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img13" onclick="pos(13)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img10", onclick="clickImg(10)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img11", onclick="clickImg(11)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img12", onclick="clickImg(12)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img13", onclick="clickImg(13)"></TD>
 			</TR>
 			<TR>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img20" onclick="pos(20)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img21" onclick="pos(21)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img22" onclick="pos(22)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img23" onclick="pos(23)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img20", onclick="clickImg(20)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img21", onclick="clickImg(21)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img22", onclick="clickImg(22)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img23", onclick="clickImg(23)"></TD>
 			</TR>
 			<TR>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img30" onclick="pos(30)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img31" onclick="pos(31)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img32" onclick="pos(32)"></TD>
-				<TD><img src="images/back.jpg" CLASS="card" ID="img33" onclick="pos(33)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img30", onclick="clickImg(30)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img31", onclick="clickImg(31)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img32", onclick="clickImg(32)"></TD>
+				<TD><img src="images/back.jpg", CLASS="card", ID="img33", onclick="clickImg(33)"></TD>
 			</TR>
 			</TABLE>
+			</DIV>
+			<DIV>
+				<DIV class="playersname">PLAYER 2</DIV>
+				<DIV class="score" ID="score2">Score : 0 </DIV>
+				<DIV><TABLE id="tableP2"></TABLE></DIV>
+
 			</DIV>
 	</BODY>
 </HTML>
