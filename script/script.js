@@ -137,7 +137,14 @@ function changeName (value){
 	if(value==1){
 		var originName=$("#player1").text();
 		console.log(originName);
-		$("#player1").html("<INPUT TYPE=\"text\" onfocusout=\"confirmName(1)\" id=\"inputP1\">");
+		$("#player1").html("<INPUT TYPE=\"text\" onfocusout=\"confirmName(1)\" id=\"inputP1\" placeholder=\"Enter name\">");
+		$("#inputP1").focus();
+	}
+if(value==2){
+		var originName=$("#player2").text();
+		console.log(originName);
+		$("#player2").html("<INPUT TYPE=\"text\" onfocusout=\"confirmName(2)\" id=\"inputP2\" placeholder=\"Enter name\">");
+		$("#inputP2").focus();
 	}
 
 }
@@ -149,6 +156,16 @@ function confirmName(value){
 			$("#player1").text("PLAYER 1");
 		else
 			$("#player1").text(name);
+		
 	
+}
+if(value==2){
+		console.log("name changed");
+		var name=$("#inputP2").val();
+		if(name.trim().length==0)
+			$("#player2").text("PLAYER 2");
+		else
+			$("#player2").text(name);
+		
 }
 }
