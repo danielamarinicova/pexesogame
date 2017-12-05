@@ -131,3 +131,24 @@ function updateScore(){
 		document.getElementById("score2").innerHTML="Score :"+score2;
 	}
 }
+
+
+function changeName (value){
+	if(value==1){
+		var originName=$("#player1").text();
+		console.log(originName);
+		$("#player1").html("<INPUT TYPE=\"text\" onfocusout=\"confirmName(1)\" id=\"inputP1\">");
+	}
+
+}
+function confirmName(value){
+	if(value==1){
+		console.log("name changed");
+		var name=$("#inputP1").val();
+		if(name.trim().length==0)
+			$("#player1").text("PLAYER 1");
+		else
+			$("#player1").text(name);
+	
+}
+}

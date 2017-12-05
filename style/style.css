@@ -1,3 +1,4 @@
 .card { width: 150px; height: 150px;}
 .playersname{ font-size: 24px; color: darkblue; font-family: Verdana; }
 .score { font-size: 20px; color: blue; font-family: Verdana; }
+ body{ background-color: #e6f0ff ;}

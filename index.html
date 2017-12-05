@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <HTML>
 	<HEAD CHARSET="UTF-8" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<SCRIPT SRC="script/script.js"></SCRIPT>
 	<TITLE> PEXESO </TITLE>
 	<LINK REL="stylesheet" HREF="style/style.css">
@@ -8,7 +9,7 @@
 </HEAD>
 	<BODY>
 		<DIV>
-		<DIV class="playersname">Player 1</DIV>
+		<DIV class="playersname" ondblclick="changeName(1)" id="player1">Player 1</DIV>
 		<DIV class="score" ID="score1">Score : 0</DIV>
 		<DIV><TABLE id="tableP1"></TABLE></DIV>
 		</DIV>
